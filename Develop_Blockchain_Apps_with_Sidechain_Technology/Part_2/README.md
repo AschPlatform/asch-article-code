@@ -1,6 +1,8 @@
 
 ## Develop Blockchain Apps with Sidechain Technology - Part 2
 
+[Develop Blockchain Apps with Sidechain Technology - Part 2](https://medium.com/aschplatform/develop-blockchain-apps-with-sidechain-technology-part-2-b241d82f3058)
+
 
 ### Folder structure
 
@@ -23,14 +25,27 @@ Be sure to have [asch-redeploy](https://github.com/AschPlatform/asch-redeploy) i
 npm install --global asch-redeploy
 ```
 
-### Start
+### Start Sidechain
 
 Execute asch-redeploy in the `sidechain` directory:  
 ```bash
 sidechain$ asch-redeploy
 ```
 
-Open new terminal, add new posts:  
+### Access Sidechain
+
+Open __new terminal__, install all dependencies:  
+
+```bash
+sidechain/api_access$ npm install
+```
+
+Add new article:  
 ```bash
 sidechain/api_access$ node index.js postArticle "Asch Sidechain - Part 2" "Article content"
+```
+
+Load all articles:  
+```bash
+sidechain/api_access$ node index.js getArticle
 ```
